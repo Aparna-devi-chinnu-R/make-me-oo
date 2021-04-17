@@ -25,4 +25,8 @@ public class Point {
         double yDistance = this.getY() - p.getY();
         return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
     }
+    public static double direction(Point p)
+    {
+        return 0.0;
+    }
 }

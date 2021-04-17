@@ -27,6 +27,8 @@ public class Point {
     }
     public static double direction(Point p)
     {
-        return 0.0;
+        double xDistance = this.getX() - p.getX();
+        double yDistance = this.getY() - p.getY();
+        return Math.atan2(yDistance, xDistance);
     }
 }

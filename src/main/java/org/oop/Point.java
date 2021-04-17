@@ -21,6 +21,8 @@ public class Point {
     }
     public static double distance(Point p)
     {
-          return 0.0;
+        double xDistance = this.getX() - p.getX();
+        double yDistance = this.getY() - p.getY();
+        return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
     }
 }

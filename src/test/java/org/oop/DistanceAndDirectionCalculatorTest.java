@@ -28,7 +28,7 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(1, 0);
         Point point2 = new Point(-1, 0);
 
-        Assertions.assertEquals(2, DistanceAndDirectionCalculator.distance(point1, point2));
+        Assertions.assertEquals(2, point1.distance(point2));
     }
 
     @Test

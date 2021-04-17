@@ -24,7 +24,7 @@ public class DistanceAndDirectionCalculatorTest {
     }
 
     @Test
-    void distanceBetweenTwoOppositePointsOnUnitCircleShouldBeTwo() {
+     void distanceBetweenTwoOppositePointsOnUnitCircleShouldBeTwo() {
         Point point1 = new Point(1, 0);
         Point point2 = new Point(-1, 0);
 
@@ -37,8 +37,8 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(1, 0);
         Point point2 = new Point(3, 0);
 
-        Assertions.assertEquals(0, direction(origin, point1));
-        Assertions.assertEquals(0, direction(origin, point2));
+        Assertions.assertEquals(0, origin.direction(point1));
+        Assertions.assertEquals(0, origin.direction(point2));
     }
 
     @Test

@@ -3,7 +3,6 @@ package org.oop;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.oop.DistanceAndDirectionCalculator.direction;
 
 public class DistanceAndDirectionCalculatorTest {
 
@@ -47,8 +46,8 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(-1, 0);
         Point point2 = new Point(-3, 0);
 
-        Assertions.assertEquals(Math.PI, origin.direction(point1));
-        Assertions.assertEquals(Math.PI, origin.direction(point2));
+        Assertions.assertEquals(Math.PI, origin.direction(point1),0.5);
+        Assertions.assertEquals(Math.PI, origin.direction(point2),0.5);
     }
 
     @Test
@@ -57,7 +56,7 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(0, 1);
         Point point2 = new Point(0, 3);
 
-        Assertions.assertEquals(Math.PI / 2, origin.direction(point2));
-        Assertions.assertEquals(Math.PI / 2, origin.direction(point1));
+        Assertions.assertEquals(Math.PI / 2, origin.direction(point2),0.5);
+        Assertions.assertEquals(Math.PI / 2, origin.direction(point1),0.5);
     }
 }

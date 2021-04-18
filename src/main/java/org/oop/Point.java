@@ -9,9 +9,9 @@ public class Point {
         return x;
     }
 
-    public void setY(double y)
+    public double getY()
     {
-        this.y = y;
+        return y;
     }
 
     public Point(double x, double y)
@@ -19,16 +19,17 @@ public class Point {
         this.x = x;
         this.y = y;
     }
-    public static double distance(Point p)
+    public double distance(Point p)
     {
         double xDistance = this.getX() - p.getX();
         double yDistance = this.getY() - p.getY();
         return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
     }
-    public static double direction(Point p)
+    public double direction(Point p)
     {
-        double xDistance = this.getX() - p.getX();
-        double yDistance = this.getY() - p.getY();
+        double xDistance = p.getX() - this.getX();
+        double yDistance = p.getY() - this.getY();
+        System.out.println(Math.atan2(yDistance, xDistance));
         return Math.atan2(yDistance, xDistance);
     }
 }

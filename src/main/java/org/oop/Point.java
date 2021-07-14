@@ -30,6 +30,7 @@ public class Point {
         double xDistance = p.getX() - this.getX();
         double yDistance = p.getY() - this.getY();
         System.out.println(Math.atan2(yDistance, xDistance));
+        System.out.println("new change");
         return Math.atan2(yDistance, xDistance);
     }
 }

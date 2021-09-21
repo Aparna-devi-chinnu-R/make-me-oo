@@ -18,10 +18,8 @@ public class DistanceAndDirectionCalculator {
         return Math.atan2(yDistance, xDistance);
     }
 }
-```
-username:***REMOVED***
-password:***REMOVED***
-````
+
+
 ```
 He thought it'll be a good idea to convert this to Object Oriented Programming. So he wrote a new implementation in package `org.oop`, he got 2 classes - 
 - `org.oop.DistanceAndDirectionCalculator`

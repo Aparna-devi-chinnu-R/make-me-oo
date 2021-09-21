@@ -22,6 +22,6 @@ dependencies {
 }
 
 flyway {
-    username:"***REMOVED***"
-    password:"***REMOVED***"
+    username:${USERNAME}
+    password:${PASSWORD}
 }

@@ -19,6 +19,10 @@ public class DistanceAndDirectionCalculator {
     }
 }
 ```
+***REMOVED***:training
+***REMOVED***:postgre"
+````
+```
 He thought it'll be a good idea to convert this to Object Oriented Programming. So he wrote a new implementation in package `org.oop`, he got 2 classes - 
 - `org.oop.DistanceAndDirectionCalculator`
 - `org.oop.Point`
